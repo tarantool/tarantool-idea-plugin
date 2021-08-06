@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2021, Tarantool AUTHORS, please see AUTHORS file.
+  ~
+  ~  Redistribution and use in source and binary forms, with or
+  ~  without modification, are permitted provided that the following
+  ~  conditions are met:
+  ~
+  ~  1. Redistributions of source code must retain the above
+  ~     copyright notice, this list of conditions and the
+  ~     following disclaimer.
+  ~
+  ~  2. Redistributions in binary form must reproduce the above
+  ~     copyright notice, this list of conditions and the following
+  ~     disclaimer in the documentation and/or other materials
+  ~     provided with the distribution.
+  ~
+  ~  THIS SOFTWARE IS PROVIDED BY <COPYRIGHT HOLDER> ``AS IS'' AND
+  ~  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+  ~  TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  ~  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+  ~  <COPYRIGHT HOLDER> OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+  ~  INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  ~  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  ~  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+  ~  BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  ~  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  ~  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
+  ~  THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+  ~  SUCH DAMAGE.
+  -->
+
+<artifacts>
+    <artifact version="1.9.4" name="tarantool">
+        <item name="tarantool-connector-1.9.4.jar"
+              url="https://repo1.maven.org/maven2/org/tarantool/connector/1.9.4/connector-1.9.4.jar"
+              md5=""/>
+        <item name="tarantool-license.txt"
+              url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
+              md5=""/>
+    </artifact>
+    <artifact version="1.9.3" name="tarantool">
+        <item name="tarantool-connector-1.9.3.jar"
+              url="https://repo1.maven.org/maven2/org/tarantool/connector/1.9.3/connector-1.9.3.jar"
+              md5=""/>
+        <item name="tarantool-license.txt"
+              url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
+              md5=""/>
+    </artifact>
+    <artifact version="1.9.2" name="tarantool">
+        <item name="tarantool-connector-1.9.2.jar"
+              url="https://repo1.maven.org/maven2/org/tarantool/connector/1.9.2/connector-1.9.2.jar"
+              md5=""/>
+        <item name="tarantool-license.txt"
+              url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
+              md5=""/>
+    </artifact>
+    <artifact version="1.9.1" name="tarantool">
+        <item name="tarantool-connector-1.9.1.jar"
+              url="https://repo1.maven.org/maven2/org/tarantool/connector/1.9.1/connector-1.9.1.jar"
+              md5=""/>
+        <item name="tarantool-license.txt"
+              url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
+              md5=""/>
+    </artifact>
+    <artifact version="1.9.0" name="tarantool">
+        <item name="tarantool-connector-1.9.0.jar"
+              url="https://repo1.maven.org/maven2/org/tarantool/connector/1.9.0/connector-1.9.0.jar"
+              md5=""/>
+        <item name="tarantool-license.txt"
+              url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
+              md5=""/>
+    </artifact>
+    <artifact version="1.8.0" name="tarantool">
+        <item name="tarantool-connector-1.8.0.jar"
+              url="https://repo1.maven.org/maven2/org/tarantool/connector/1.8.0/connector-1.8.0.jar"
+              md5=""/>
+        <item name="tarantool-license.txt"
+              url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
+              md5=""/>
+    </artifact>
+    <artifact version="1.9.4" name="tarantool">
+        <item name="tarantool-connector-1.9.4.jar"
+              url="https://repo1.maven.org/maven2/org/tarantool/connector/1.9.4/connector-1.9.4.jar"
+              md5=""/>
+        <item name="tarantool-license.txt"
+              url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
+              md5=""/>
+    </artifact>
+</artifacts>

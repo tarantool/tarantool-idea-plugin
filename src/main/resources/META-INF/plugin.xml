@@ -1,0 +1,68 @@
+<!--
+  ~ Copyright 2021, Tarantool AUTHORS, please see AUTHORS file.
+  ~
+  ~  Redistribution and use in source and binary forms, with or
+  ~  without modification, are permitted provided that the following
+  ~  conditions are met:
+  ~
+  ~  1. Redistributions of source code must retain the above
+  ~     copyright notice, this list of conditions and the
+  ~     following disclaimer.
+  ~
+  ~  2. Redistributions in binary form must reproduce the above
+  ~     copyright notice, this list of conditions and the following
+  ~     disclaimer in the documentation and/or other materials
+  ~     provided with the distribution.
+  ~
+  ~  THIS SOFTWARE IS PROVIDED BY <COPYRIGHT HOLDER> ``AS IS'' AND
+  ~  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+  ~  TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  ~  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+  ~  <COPYRIGHT HOLDER> OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+  ~  INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  ~  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  ~  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+  ~  BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  ~  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  ~  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
+  ~  THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+  ~  SUCH DAMAGE.
+  -->
+
+<idea-plugin>
+    <id>io.tarantool</id>
+    <name>Tarantool Database</name>
+    <vendor email="alexander.galagutskiy@gmail.com" url="https://tarantool.io/">Tarantool</vendor>
+
+    <description><![CDATA[
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.database</depends>
+
+    <extensions defaultExtensionNs="com.intellij.database">
+        <driversConfig config="databaseDrivers/tarantool-drivers.xml"/>
+        <artifactsConfig config="databaseDrivers/database-artifacts.xml"/>
+        <dmlHelper dbms="TARANTOOL" implementationClass="io.tarantool.idea.plugin.sql.TarantoolDmlGenerator"/>
+        <domainRegistry dbms="TARANTOOL" implementationClass="io.tarantool.idea.plugin.sql.TarantoolDomains"/>
+    </extensions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <sql.dialect dbms="TARANTOOL"
+                     implementationClass="io.tarantool.idea.plugin.sql.TarantoolDialect"
+                     order="first"/>
+        <database.dialect dbms="TARANTOOL"
+                          implementationClass="io.tarantool.idea.plugin.sql.TarantoolDatabaseDialect"
+                          order="first"/>
+        <lang.parserDefinition language="Tarantool"
+                               implementationClass="io.tarantool.idea.plugin.sql.parser.TarantoolParserDefinition"/>
+        <lang.syntaxHighlighterFactory language="Tarantool"
+                                       implementationClass="io.tarantool.idea.plugin.sql.TarantoolSyntaxHighlighterFactory"/>
+        <lang.commenter language="Tarantool"
+                        implementationClass="com.intellij.sql.psi.impl.support.SqlNestedCommenter"/>
+        <langCodeStyleSettingsProvider
+                implementation="io.tarantool.idea.plugin.sql.codestyle.TarantoolSqlLanguageCodeStyleSettingsProvider"/>
+        <database.dbms instance="io.tarantool.idea.plugin.sql.DbmsHolder.DBMS"/>
+    </extensions>
+
+</idea-plugin>
