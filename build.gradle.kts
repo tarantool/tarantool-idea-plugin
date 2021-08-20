@@ -1,3 +1,4 @@
+import org.jetbrains.changelog.date
 import org.jetbrains.changelog.markdownToHTML
 
 /*
@@ -87,6 +88,16 @@ tasks {
 
     runPluginVerifier {
         ideVersions.set(properties("pluginVerifierIdeVersions").split(',').map(String::trim).filter(String::isNotEmpty))
+    }
+
+    changelog {
+        version.set(version)
+        path.set("${project.projectDir}/CHANGELOG.md")
+        header.set(provider { "[${version.get()}] - ${date()}" })
+        itemPrefix.set("-")
+        keepUnreleasedSection.set(true)
+        unreleasedTerm.set("[Unreleased]")
+        groups.set(listOf("Added", "Changed", "Deprecated", "Removed", "Fixed", "Security"))
     }
 
     publishPlugin {
