@@ -17,10 +17,10 @@
     </extensions>
 
     <extensions defaultExtensionNs="com.intellij">
-        <sql.dialect dbms="TARANTOOL"
+        <sql.dialect dbms="Tarantool"
                      implementationClass="io.tarantool.idea.plugin.sql.TarantoolDialect"
                      order="first"/>
-        <database.dialect dbms="TARANTOOL"
+        <database.dialect dbms="Tarantool"
                           implementationClass="io.tarantool.idea.plugin.sql.TarantoolDatabaseDialect"
                           order="first"/>
         <lang.parserDefinition language="Tarantool"
