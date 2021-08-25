@@ -48,12 +48,4 @@
               url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
               md5=""/>
     </artifact>
-    <artifact version="1.9.4" name="tarantool">
-        <item name="tarantool-connector-1.9.4.jar"
-              url="https://repo1.maven.org/maven2/org/tarantool/connector/1.9.4/connector-1.9.4.jar"
-              md5=""/>
-        <item name="tarantool-license.txt"
-              url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
-              md5=""/>
-    </artifact>
 </artifacts>
