@@ -4,5 +4,5 @@ import scala.language.postfixOps
 
 object Constants {
   val tarantool: String     = "Tarantool"
-  val dbmsTarantool: String = tarantool toUpperCase
+  val dbmsTarantool: String = tarantool
 }
