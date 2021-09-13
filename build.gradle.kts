@@ -20,7 +20,7 @@ repositories {
 
 dependencies {
     implementation("org.scala-lang:scala-library:2.13.6")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.7.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.0")
 }
 
 // Configure gradle-intellij-plugin plugin.
