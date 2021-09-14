@@ -60,7 +60,7 @@ tasks {
     }
 
     changelog {
-        version.set(version)
+        version.set(properties("pluginVersion"))
         path.set("${project.projectDir}/CHANGELOG.md")
         header.set(provider { "[${version.get()}] - ${date()}" })
         itemPrefix.set("-")
