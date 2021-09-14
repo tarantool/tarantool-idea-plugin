@@ -1,5 +1,4 @@
 import org.jetbrains.changelog.date
-import org.jetbrains.changelog.markdownToHTML
 
 fun properties(key: String) = project.findProperty(key).toString()
 
@@ -67,6 +66,12 @@ tasks {
         keepUnreleasedSection.set(true)
         unreleasedTerm.set("[Unreleased]")
         groups.set(listOf("Added", "Changed", "Deprecated", "Removed", "Fixed", "Security"))
+    }
+
+    signPlugin {
+        certificateChain.set(System.getenv("CERTIFICATE_CHAIN"))
+        privateKey.set(System.getenv("PRIVATE_KEY"))
+        password.set(System.getenv("PRIVATE_KEY_PASSWORD"))
     }
 
     publishPlugin {
