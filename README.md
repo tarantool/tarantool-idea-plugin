@@ -73,5 +73,5 @@ See [LICENSE](LICENSE) for a list of redistribution, modication and usage rules.
 [plugin-repo]: https://plugins.jetbrains.com/plugin/17422-tarantool-database
 [plugin-downloads-svg]: http://img.shields.io/jetbrains/plugin/d/17422
 [plugin-rating-svg]: https://img.shields.io/jetbrains/plugin/r/rating/17422
-[plugin-version-svg]: https://img.shields.io/jetbrains/plugin/v/17422?label=version
+[plugin-version-svg]: https://img.shields.io/jetbrains/plugin/v/17422
 [contributions-welcome-svg]: http://img.shields.io/badge/contributions-welcome-brightgreen
