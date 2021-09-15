@@ -21,6 +21,9 @@ on:
   # Trigger the workflow on any pull request
   pull_request:
 
+  # Trigger the workflow manually. e.g. for release
+  workflow_dispatch:
+
 jobs:
 
   # Run Gradle Wrapper Validation Action to verify the wrapper's checksum
