@@ -8,44 +8,4 @@
               url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
               md5=""/>
     </artifact>
-    <artifact version="1.9.3" name="tarantool">
-        <item name="tarantool-connector-1.9.3.jar"
-              url="https://repo1.maven.org/maven2/org/tarantool/connector/1.9.3/connector-1.9.3.jar"
-              md5=""/>
-        <item name="tarantool-license.txt"
-              url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
-              md5=""/>
-    </artifact>
-    <artifact version="1.9.2" name="tarantool">
-        <item name="tarantool-connector-1.9.2.jar"
-              url="https://repo1.maven.org/maven2/org/tarantool/connector/1.9.2/connector-1.9.2.jar"
-              md5=""/>
-        <item name="tarantool-license.txt"
-              url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
-              md5=""/>
-    </artifact>
-    <artifact version="1.9.1" name="tarantool">
-        <item name="tarantool-connector-1.9.1.jar"
-              url="https://repo1.maven.org/maven2/org/tarantool/connector/1.9.1/connector-1.9.1.jar"
-              md5=""/>
-        <item name="tarantool-license.txt"
-              url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
-              md5=""/>
-    </artifact>
-    <artifact version="1.9.0" name="tarantool">
-        <item name="tarantool-connector-1.9.0.jar"
-              url="https://repo1.maven.org/maven2/org/tarantool/connector/1.9.0/connector-1.9.0.jar"
-              md5=""/>
-        <item name="tarantool-license.txt"
-              url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
-              md5=""/>
-    </artifact>
-    <artifact version="1.8.0" name="tarantool">
-        <item name="tarantool-connector-1.8.0.jar"
-              url="https://repo1.maven.org/maven2/org/tarantool/connector/1.8.0/connector-1.8.0.jar"
-              md5=""/>
-        <item name="tarantool-license.txt"
-              url="https://raw.githubusercontent.com/tarantool/tarantool-java/master/LICENSE"
-              md5=""/>
-    </artifact>
 </artifacts>

@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.scala-lang:scala-library:2.13.6")
+    implementation("org.scala-lang:scala3-library_3:3.0.2")
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.0")
 }
 
@@ -41,6 +41,10 @@ tasks {
     withType<JavaCompile> {
         sourceCompatibility = "11"
         targetCompatibility = "11"
+    }
+
+    withType<ScalaCompile> {
+        scalaCompileOptions.additionalParameters = listOf("-Ytasty-reader")
     }
 
     patchPluginXml {

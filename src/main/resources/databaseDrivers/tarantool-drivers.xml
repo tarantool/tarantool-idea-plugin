@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <drivers>
     <!-- icon="TIcons.Tarantool13"-->
-    <driver id="tarantool"
-            name="tarantool"
+    <driver id="TARANTOOL"
+            name="Tarantool"
             icon="TarantoolIcons.Tarantool13"
-            dialect="tarantool"
+            dialect="TARANTOOL"
             driver-class="org.tarantool.jdbc.SQLDriver">
         <url-template name="URL" template="jdbc:tarantool://{host}:{port}"/>
         <artifact name="tarantool" use="true" rolling="true"/>
