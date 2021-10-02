@@ -7,7 +7,7 @@ import com.intellij.database.model._
 import com.intellij.database.util._
 import com.intellij.openapi.util.Pair
 
-class TarantoolDatabaseDialect(private val _dbms: Dbms) extends AbstractDatabaseDialect(TarantoolTypeHelper) {
+class TarantoolDatabaseDialect extends AbstractDatabaseDialect(TarantoolTypeHelper) {
 
   override def qualifiedIdentifier(
     ddlBuilder: DdlBuilder,
@@ -20,9 +20,9 @@ class TarantoolDatabaseDialect(private val _dbms: Dbms) extends AbstractDatabase
     ddlBuilder.qualifiedRef(dasObject, s, schema, dasName, null, null, null, null)
   }
 
-  override def getDbms: Dbms = _dbms
+  override def getDbms: Dbms = DbmsHolder.DBMS
 
-  override def getDisplayName: String = "Tarantool SQL"
+  override def getDisplayName: String = Constants.tarantool
 
   override def supportsEmptyTables(): Boolean = false
 

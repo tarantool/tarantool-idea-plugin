@@ -12,17 +12,13 @@
     <extensions defaultExtensionNs="com.intellij.database">
         <driversConfig config="databaseDrivers/tarantool-drivers.xml"/>
         <artifactsConfig config="databaseDrivers/database-artifacts.xml"/>
-        <dmlHelper dbms="TARANTOOL" implementationClass="io.tarantool.idea.plugin.sql.TarantoolDmlGenerator"/>
+        <dmlHelper dbms="TARANTOOL" implementationClass="com.intellij.database.dialects.base.BaseDmlHelper"/>
         <domainRegistry dbms="TARANTOOL" implementationClass="io.tarantool.idea.plugin.sql.TarantoolDomains"/>
     </extensions>
 
     <extensions defaultExtensionNs="com.intellij">
-        <sql.dialect dbms="TARANTOOL"
-                     implementationClass="io.tarantool.idea.plugin.sql.TarantoolDialect"
-                     order="first"/>
-        <database.dialect dbms="TARANTOOL"
-                          implementationClass="io.tarantool.idea.plugin.sql.TarantoolDatabaseDialect"
-                          order="first"/>
+        <sql.dialect dbms="TARANTOOL" implementationClass="io.tarantool.idea.plugin.sql.TarantoolDialect"/>
+        <database.dialect dbms="TARANTOOL" implementationClass="io.tarantool.idea.plugin.sql.TarantoolDatabaseDialect"/>
         <lang.parserDefinition language="Tarantool"
                                implementationClass="io.tarantool.idea.plugin.sql.parser.TarantoolParserDefinition"/>
         <lang.syntaxHighlighterFactory language="Tarantool"
