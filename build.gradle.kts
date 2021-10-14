@@ -6,7 +6,7 @@ plugins {
     id("java")
     id("scala")
     id("org.jetbrains.intellij") version "1.2.0"
-    id("org.jetbrains.changelog") version "1.3.0"
+    id("org.jetbrains.changelog") version "1.3.1"
 }
 
 group = properties("pluginGroup")
