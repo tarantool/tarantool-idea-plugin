@@ -11,7 +11,7 @@ public interface TarantoolIcons {
 
     static Icon load(String path) {
         Objects.requireNonNull(path);
-        Icon icon = IconLoader.getIcon("/icons/" + path);
+        Icon icon = IconLoader.getIcon("/icons/" + path, TarantoolIcons.class);
         return Objects.requireNonNull(icon);
     }
 
