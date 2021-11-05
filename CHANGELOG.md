@@ -1,6 +1,19 @@
 # Changelog
 
 ## [Unreleased]
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [0.1.0] - 2021-11-05
 ### Breaking Changes
 - Updated minimal Intellij Platform version to 2021.3
 
@@ -16,4 +29,3 @@
 ## [0.0.1] - 2021-08-13
 ### Added
 - Initial plugin implementation
-
