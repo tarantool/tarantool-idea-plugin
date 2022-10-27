@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.scala-lang:scala3-library_3:3.1.3")
+    implementation("org.scala-lang:scala3-library_3:3.2.1")
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.0")
 }
 
