@@ -19,7 +19,7 @@ repositories {
 
 dependencies {
     implementation("org.scala-lang:scala3-library_3:3.1.3")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.9.0")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
 }
 
 // Configure gradle-intellij-plugin plugin.
